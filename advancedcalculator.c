@@ -23,7 +23,6 @@ void calculation(pointers p){
   int answer = 0;
 printf("ok, let's calculate... what do you want ? \n" "enter the desired number \n" "1 addition \n" "2 subtraction ? \n" "3 multiplication \n");
 scanf("%d", &answer);
-#define numr "your result is"
 
 
 // case system to avoid using billions of if's
@@ -32,17 +31,17 @@ switch (answer)
 case 1:
   printf("ok let's do an addition \n");
   askcons(p);
-  printf(numr" %d \n", *p.pn1 + *p.pn2);
+  printf("your result is %d \n", *p.pn1 + *p.pn2);
   break;
 case 2:
   printf("ok let's do a subtraction\n");
   askcons(p);
-  printf(numr" %d \n", *p.pn1 - *p.pn2);
+  printf("your result is %d \n", *p.pn1 - *p.pn2);
 break;
 case 3:
   printf("ok let's do a multiplication \n");
   askcons(p);
-  printf(numr" %d \n", *p.pn1 * *p.pn2);
+  printf("your result is %d \n", *p.pn1 * *p.pn2);
 break;
 default:
 printf("this answer is invalid\n");
